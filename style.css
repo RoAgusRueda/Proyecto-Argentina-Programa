@@ -1,28 +1,37 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,700&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
-
 *{
     font-family: 'Poppins', sans-serif;
 }
 
 
 :root{
-    --color-text: white;
+    --bs-nav-link-color: white;
     --bs-border-width: 10px;
+   
+
 }
 
 body{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   background-color: aqua;
+
+}
+
+.z-index-img-title{
+    z-index: 1;
+}
+.full-content{
+background-color: black;
+
 }
 
 .leftcontainer{
     background-color: black;
-    justify-content: absolute;
-    width:30vh;
+    width: 30vh;
     height: 100vh;
 }
 
@@ -41,15 +50,6 @@ body{
     max-height: 100vh;
 }
 
-/* 
- "justify-content": (
-      responsive: true,
-      property: justify-content,
-      values: (
-        start: flex-start,
-        end: flex-end,
-        center: center,
-        between: space-between,
-        around: space-around,
-        evenly: space-evenly,
-      ) */
+.color-icon{
+    color: #87a8d0;
+}
