@@ -9,13 +9,7 @@
     <link rel="stylesheet" href="https://sp.depositphotos.com/345391328/stock-photo-young-caucasian-woman-isolated-confident.html">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
-  <style>
-    .chart-container {
-      width: 100%;
-      height: 50%;
-      margin: 0;
-    }
-  </style>
+ 
   
 
 <body>
@@ -49,7 +43,7 @@
                   </li>
               </ul>
               <div class="dropdown">
-                  <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a href="#contact" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="bi bi-telephone h2"></i>
                   </a>
               </div>
@@ -59,7 +53,7 @@
       <div class="col-sm p-0 d-block w-100%">
 
         <div class="row">
-         <div class="header position-relative  z-index-img-title"><h1 class="text-center fs-1 fw-bolder">Hi! I'm Jane Doe</h1></div>
+         <div class="header position-relative  z-index-img-title"><h1 class="text-center fs-1 fw-bolder w3-hide-small">Hi! I'm Jane Doe</h1></div>
            <div class="img" id="img-user">
            <img src="https://st3.depositphotos.com/3433891/34539/i/600/depositphotos_345391328-stock-photo-young-caucasian-woman-isolated-confident.jpg" position="relative" class="card-img-top" alt="...">
           </div>  
@@ -73,16 +67,33 @@
          </div>
        </div>
 
-       <div class="p-2 col-sm-auto vertical-align d-flex align-items-center " id="Skills">
-        <div class="row">
-           <h2 class="col-sm position-relative" id="skills">Skills</h2>
-           <div class="card chart-container">
-            <canvas id="chart"></canvas>
-          </div>
+       <div class=" p-4 padding-16 text-light-grey" id="Skills">
+        <div class="row"> 
+          <div><h2 class="col-sm position-relative" id="skills">Skills</h2>
         </div>
-      </div>
+        <p class="col-sm position-relative">Photography</p>
+        <div class="progress">
+          <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div> </div>
+        <p class="col-sm position-relative">Web Design</p>
+        <div class="progress">
+          <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div> </div>
+        <p class="col-sm position-relative">Photoshop</p>
+        <div class="progress">
+          <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </div>
+        </div>
+       
+        <div>
 
-      <div class="p-2 col-sm-auto vertical-align d-flex align-items-center " id="Experience">
+        </div>
+     
+ 
+</div>
+        </div>
+
+      <div class="mt-4 p-2 col-sm-auto vertical-align d-flex align-items-center " id="Experience">
         <div class="row">
            <h2 class="col-sm position-relative" id="experience">Experience</h2>
             <p class="p-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl justo, eu sodales dui mattis ut. Nam interdum, mi sed suscipit rhoncus, urna ex pulvinar justo, a venenatis ipsum purus ut sem. Maecenas congue nibh semper pellentesque aliquet. Mauris convallis porta ipsum sed auctor. Suspendisse potenti. In maximus dui a nibh tempor ultricies. Nunc et dui et mi gravida posuere. Morbi vulputate mi vitae risus ultrices, convallis ornare ante consequat. In egestas iaculis purus at mollis. Etiam fringilla elit eget luctus commodo. Vestibulum vel luctus leo. Curabitur ut felis sit amet justo rhoncus aliquam eu eget massa. Quisque iaculis augue ut iaculis eleifend. Donec suscipit porta dapibus.
@@ -90,34 +101,34 @@
         </div>
       </div>
 
+      <div class="Contact m-4" id="contact">
+        <div class="row">
+          <h2 class="text col-sm position-relative" id="contact">Contact me</h2>
+          <hr style="width:200px poaition-left" class="w3-opacity">
+          <div>
+             <i class="bi bi-geo-alt-fill"> Atlantis, Ocean.</i> 
+            </div>
+            <div> <i class="bi bi-telephone-fill"> Phone: +00 1234567</i> </div>
+             <div> <i class="bi bi-envelope-at"> Email: janedoe@mail.com</i></div>
+             <div class="p-4"><i>Or:</i></div>
+             
+             <div class="mb-3 row">
+              <p><input class="input p-16 col-sm-2 col-form-label" type="text" placeholder="Name" required name="Name"></p>
+              <p><input class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="name@example.com" required name="Email"></p>
+              <p><input class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="Subject" required name="Subject"></p>
+              <p><input class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="Message" required name="Message"></p>
+              <p>
+                <button class="btn btn-outline-secondary" type="submit"> Submit
+                </button>
+              </p>
+            </div>
+
+        </div>
         </div>
 
 
-        </div>
-      </div>
+      
   </div>
 </div>
   </body>
-
-  <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js">
-  </script>
-  <script>
-        const ctx = document.getElementById("chart").getContext('2d');
-        const myChart = new Chart(ctx, {
-          type: 'doughnut',
-          data: {
-            labels: ["Lorem", "Ipsum", "Dolor",
-            "Sit", "Amet",],
-            datasets: [{
-              label: 'Skills',
-              backgroundColor: 'rgba(100, 70, 86, 0.52)',
-              borderColor: 'rgba(220, 242, 243, 0.52)',
-              data: [90, 80, 61, 75, 45,],
-            }]
-          },
-         
-        });
-  </script>
-
 </html>
