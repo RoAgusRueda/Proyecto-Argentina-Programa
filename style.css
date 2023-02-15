@@ -49,3 +49,7 @@ body{
 .color-icon{
     color: black;
 }
+
+.accordion-item {
+    width: 100%;
+}
