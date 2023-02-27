@@ -41,10 +41,6 @@ body{
     overflow: hidden;
 }
 
-.nav-bar{
-    position: relative;
-    max-height: 100vh;
-}
 
 .color-icon{
     color: black;
@@ -52,4 +48,45 @@ body{
 
 .accordion-item {
     width: 100%;
+}
+
+#form {
+    width: auto;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#hamburger {
+    cursor: pointer;
+  }
+
+#sidebar{
+    width: 10rem;
+    height: 100vh;
+    background-color: rgb(247, 247, 247);
+    top: 0;
+    left: 0;
+
+   
+}
+
+.image{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+}
+.image img{
+      position: absolute;
+      max-width: 100%;
+      max-height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+}
+
+#right-container{
+    margin-left: 10rem;
 }

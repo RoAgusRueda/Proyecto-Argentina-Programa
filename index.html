@@ -15,57 +15,35 @@
   
 
 <body>
-  
-<div class="container-fluid">
-  <div class="row">
-      <div class="col-sm-auto bg-light sticky-top">
-          <div class="d-flex flex-sm-column flex-row flex-nowrap bg-light color-icon align-items-center sticky-top">
-              <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-              </a>
-              <ul class="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
-                  <li class="nav-item">
-                      <a href="#top" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-                          <i class="bi-house fs-1 color-icon "></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#about" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="About">
-                          <i class="bi bi-person-circle fs-1 color-icon"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#skills" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Skills">
-                          <i class="bi bi-list-columns-reverse fs-1 color-icon"></i>
-                      </a>
-                  </li>
-                  <li>
-                      <a href="#experience" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Experience">
-                          <i class="bi bi-file-text-fill fs-1 color-icon"></i>
-                      </a>
-                  </li>
-                  <li>
-                    <a href="#contact" class="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Contact">
-                        <i class="bi bi-telephone-fill fs-1 color-icon"></i>
-                    </a>
-                </li>
-              </ul>
-          </div>
-      </div>
-      
-      <div class="col-sm p-0 d-block w-100%">
+    <i class="bi bi-list" id="hamburger"></i>
+  <div class="container-fluid"> 
 
-        <div class="row">
-         <div class="header position-absolute  z-index-img-title"><h1 class="text-center fs-1 fw-bolder w3-hide-small">Hi! I'm Jane Doe</h1></div>
-           <div class="img" id="img-user">
-           <img src="https://st3.depositphotos.com/3433891/34539/i/600/depositphotos_345391328-stock-photo-young-caucasian-woman-isolated-confident.jpg" position="relative" class="card-img-top" alt="...">
-          </div>  
-        </div>  
-         
-       <div class="p-4 col-sm-auto vertical-align d-flex align-items-center " id="About">
+  <div class="col">
+    <div class="sidebar position-fixed col-1 d-none d-sm-block d-md-block t-0" id="sidebar">
+            <div class="image"> 
+              <img src="https://st3.depositphotos.com/3433891/34539/i/600/depositphotos_345391328-stock-photo-young-caucasian-woman-isolated-confident.jpg" class="img" alt="" id="img">
+            </div>
+            <div class="bar d-flex flex-column align-items-center"> 
+              <a href="#" class="sidebar-item mt-4 mb-4"  > <i class="bi-house fs-1 color-icon "></i></a>     
+              <a href="#about" class="sidebar-item mb-4" ><i class="bi bi-person-circle fs-1 color-icon"></i>  </a>  
+              <a href="#skills" class="sidebar-item mb-4" > <i class="bi bi-list-columns-reverse fs-1 color-icon"></i> </a> 
+              <a href="#experience" class="sidebar-item mb-4" ><i class="bi bi-file-text-fill fs-1 color-icon"></i>  </a> 
+              <a href="#contact" class="sidebar-item mb-4" ><i class="bi bi-telephone-fill fs-1 color-icon"></i> </a> 
+            </div>
+    </div>
+  </div>
+
+  <div class="container" id="right-container">  
+
+   <h1 class="text-center mt-4 mb-4"> Hi, i'm Jane Doe</h1>
+  
+
+       <div class="p-4 col-sm-auto vertical-align d-flex align-items-center " id="about">
          <div class="row">
             <h2 class="col-sm position-relative" id="about">About</h2>
              <p class="p-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl justo, eu sodales dui mattis ut. Nam interdum, mi sed suscipit rhoncus, urna ex pulvinar justo, a venenatis ipsum purus ut sem. Maecenas congue nibh semper pellentesque aliquet. Mauris convallis porta ipsum sed auctor. Suspendisse potenti. In maximus dui a nibh tempor ultricies. Nunc et dui et mi gravida posuere. Morbi vulputate mi vitae risus ultrices, convallis ornare ante consequat. In egestas iaculis purus at mollis. Etiam fringilla elit eget luctus commodo. Vestibulum vel luctus leo. Curabitur ut felis sit amet justo rhoncus aliquam eu eget massa. Quisque iaculis augue ut iaculis eleifend. Donec suscipit porta dapibus.
             Cras vulputate augue vitae finibus commodo.</p>
+            <p class="p-4 fw-light"> Ut tincidunt, dolor euismod interdum fringilla, felis orci dictum mauris, in pretium velit tellus sit amet nibh. Morbi maximus risus eu eros dictum dignissim. Phasellus congue ut risus et posuere. Suspendisse ornare ipsum a nisl facilisis auctor. Quisque ac sem quis odio sodales vestibulum. In ultricies dapibus nibh sed placerat. Suspendisse sed convallis turpis, eu condimentum quam. Sed suscipit felis dapibus metus lacinia auctor. Donec ante libero, finibus nec elit id, scelerisque ultricies metus. Integer ut quam eu leo ornare tincidunt. Aliquam semper non nunc vel ultrices. Nulla finibus massa a lacus tempus faucibus.</p>
          </div>
        </div>
 
@@ -91,7 +69,6 @@
           <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         </div> </div>
      
- 
 </div>
         </div>
 
@@ -153,8 +130,10 @@
             </div>
             <div> <i class="bi bi-telephone-fill"> Phone: +00 1234567</i> </div>
              <div> <i class="bi bi-envelope-at"> Email: janedoe@mail.com</i></div>
-             <div class="p-4"><i>Or:</i></div>
+             <div class="p-4"><i>Or send a Message:</i></div>
              
+             <div class="container">
+              <form id="form" action="/">
              <div class="mb-3 row">
               <p><input class="input p-16 col-sm-2 col-form-label" type="text" placeholder="Name" required name="Name"></p>
               <p><input class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="name@example.com" required name="Email"></p>
@@ -165,14 +144,17 @@
                 </button>
               </p>
             </div>
+          </div>
 
-        </div>
+            </div>
+
+        </div> 
+      </div>
         </div>
 
 
       
-  </div>
-</div>
 
+    <script src="main.js"></script>
   </body>
 </html>
