@@ -15,15 +15,17 @@
   
 
 <body>
-    <i class="bi bi-list" id="hamburger"></i>
-  <div class="container-fluid"> 
+    <i class="bi bi-list m-4" id="hamburger"></i>
+  <div class="container-fluid" id="principal-container"> 
 
-  <div class="col">
-    <div class="sidebar position-fixed col-1 d-none d-sm-block d-md-block t-0" id="sidebar">
-            <div class="image"> 
+  <div class="col position-relative">
+    <div class="sidebar position-fixed col-1 disable-menu t-0 d-lg-block" id="sidebar">
+              <i id="cerrar" class="bi bi-x-circle d-lg-none position-absolute end-0 p-1 z-index-2"></i> 
+              <div class="image"> 
               <img src="https://st3.depositphotos.com/3433891/34539/i/600/depositphotos_345391328-stock-photo-young-caucasian-woman-isolated-confident.jpg" class="img" alt="" id="img">
             </div>
             <div class="bar d-flex flex-column align-items-center"> 
+              
               <a href="#" class="sidebar-item mt-4 mb-4"  > <i class="bi-house fs-1 color-icon "></i></a>     
               <a href="#about" class="sidebar-item mb-4" ><i class="bi bi-person-circle fs-1 color-icon"></i>  </a>  
               <a href="#skills" class="sidebar-item mb-4" > <i class="bi bi-list-columns-reverse fs-1 color-icon"></i> </a> 
@@ -33,12 +35,11 @@
     </div>
   </div>
 
-  <div class="container" id="right-container">  
+  <div class="container-fluid" id="right-container">  
 
    <h1 class="text-center mt-4 mb-4"> Hi, i'm Jane Doe</h1>
-  
 
-       <div class="p-4 col-sm-auto vertical-align d-flex align-items-center " id="about">
+       <div class="p-4 col-sm-auto vertical-align d-flex align-items-center " id="About">
          <div class="row">
             <h2 class="col-sm position-relative" id="about">About</h2>
              <p class="p-4 fw-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis nisl justo, eu sodales dui mattis ut. Nam interdum, mi sed suscipit rhoncus, urna ex pulvinar justo, a venenatis ipsum purus ut sem. Maecenas congue nibh semper pellentesque aliquet. Mauris convallis porta ipsum sed auctor. Suspendisse potenti. In maximus dui a nibh tempor ultricies. Nunc et dui et mi gravida posuere. Morbi vulputate mi vitae risus ultrices, convallis ornare ante consequat. In egestas iaculis purus at mollis. Etiam fringilla elit eget luctus commodo. Vestibulum vel luctus leo. Curabitur ut felis sit amet justo rhoncus aliquam eu eget massa. Quisque iaculis augue ut iaculis eleifend. Donec suscipit porta dapibus.
@@ -47,18 +48,20 @@
          </div>
        </div>
 
-       <div class=" p-4 padding-16 text-light-grey" id="Skills">
+       <div class=" p-4 col-sm-auto padding-16 d-flex text-light-grey" id="Skills">
         <div class="row"> 
-          <div><h2 class=" mb-4 col-sm position-relative" id="skills">Skills</h2>
-        </div>
-        <p class="col-sm position-relative">Photography</p>
-        <div class="progress">
-          <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        </div> </div>
+          <div><h2 class="mb-4 col-sm position-relative" id="skills">Skills</h2>
+          </div>
+         <p class="col-sm position-relative">Photography</p>
+          <div class="progress">
+           <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          </div> 
+         </div>
         <p class="col-sm position-relative">Web Design</p>
         <div class="progress">
           <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 55%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-        </div> </div>
+          </div> 
+        </div>
         <p class="col-sm position-relative">Photoshop</p>
         <div class="progress">
           <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
@@ -69,10 +72,10 @@
           <div class="progress-bar bg-success bg-black" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
         </div> </div>
      
-</div>
         </div>
+       </div>
 
-      <div class="mt-4 p-4 col-sm-auto" id="Experience">
+      <div class="mt-4 p-4 col-sm-auto " id="Experience">
         <div class="row">
            <h2 class="col-sm position-relative" id="experience">Experience</h2>
            <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -109,11 +112,15 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Accordion Item #3
+                  Disny Coffee
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                <div class="accordion-body"><p>Community Manager</p>
+                  <p>Work experience: 2 years</p>
+                  <p>Skills: Photography and Social Media.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum imperdiet hendrerit. Sed ut ipsum sed elit consequat hendrerit. Proin tincidunt quis nulla non mattis. Suspendisse ex erat, fringilla vitae enim et, sollicitudin convallis mi. Sed posuere facilisis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -121,10 +128,10 @@
         </div>
       </div>
 
-      <div class="Contact m-4" id="contact">
+      <div class="Contact m-4" id="Contact">
         <div class="row">
           <h2 class="text col-sm position-relative" id="contact">Contact me</h2>
-          <hr style="width:200px poaition-left" class="w3-opacity">
+          <hr style="width:200px position-left" class="w3-opacity">
           <div>
              <i class="bi bi-geo-alt-fill"> Atlantis, Ocean.</i> 
             </div>
@@ -132,19 +139,76 @@
              <div> <i class="bi bi-envelope-at"> Email: janedoe@mail.com</i></div>
              <div class="p-4"><i>Or send a Message:</i></div>
              
-             <div class="container">
-              <form id="form" action="/">
-             <div class="mb-3 row">
-              <p><input class="input p-16 col-sm-2 col-form-label" type="text" placeholder="Name" required name="Name"></p>
-              <p><input class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="name@example.com" required name="Email"></p>
-              <p><input class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="Subject" required name="Subject"></p>
-              <p><input class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="Message" required name="Message"></p>
-              <p>
-                <button class="btn btn-outline-secondary" type="submit"> Submit
-                </button>
-              </p>
+        <form action="" class="form" id="form">
+
+              <div class="form__group" id="group__name">
+                <label for="name" class="form__label">Name</label>
+                <div class="form__group-input">
+                  <input type="text" class="form__input" name="name" id="name" placeholder="Name" required>
+                  <i class="form__validacion-estado bi bi-exclamation-lg"></i>
+                </div>
+                <p class="form__input-error">The name has to be 4 to 16 digits and can only contain numbers and letters.</p>
+              </div>
+        
+              
+              <div class="form__group" id="group__email">
+                <label for="email" class="form__label">Email</label>
+                <div class="form__group-input">
+                  <input type="email" class="form__input" name="email" id="email" placeholder="email@email.com" required>
+                  <i class="form__validacion-estado bi bi-exclamation-lg"></i>
+                </div>
+                <p class="form__input-error">The email can only contain letters, numbers, periods, hyphens and underscores.</p>
+              </div>
+
+              <div class="form__group" id="group__subject">
+                <label for="subject" class="form__label">Subject</label>
+                <div class="form__group-input">
+                  <input type="text" class="form__input" name="subject" id="subject" placeholder="Subject" required>
+                  <i class="form__validacion-estado bi bi-exclamation-lg"></i>
+                </div>
+              </div>
+
+              <div class="form__group" id="group__message">
+                <label for="message" class="form__label">Message</label>
+                <div class="form__group-input">
+                  <input type="text" class="form__input" name="message" id="email" placeholder="Message" required>
+                  <i class="form__validacion-estado bi bi-exclamation-lg"></i>
+                </div>
+              </div>
+
+
+              <div class="form__message" id="form__message">
+                <p><i class="bi bi-exclamation-diamond"></i><b>Error:</b> Por favor rellena el formulario correctamente. </p>
+              </div>
+        
+              <div class="form__group form__group-btn-send">
+                <button type="submit" class="form__btn">Submit</button>
+                <p class="form__message-success" id="form__message-success">Form submitted successfully!</p>
+              </div>
+        </form>
+            
+            
+             <!-- <div action="/" class="form" id="form">
+              <div class="mb-3 row">
+
+                 <div class="form_group" id="group_name">
+                  <p><input id="name" class="input p-16 col-sm-2 col-form-label" type="text" placeholder="Name" required name="Name"></p>
+                 </div>
+
+                 <div><p><input id="email" class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="name@example.com" required name="Email"></p>
+                 </div>
+
+                 <div><p><input id="subject" class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="Subject" required name="Subject"></p>
+                 </div>
+
+                 <div><p><input id="message" class="input padding-16 col-sm-2 col-form-label" type="text" placeholder="Message" required name="Message"></p>
+                 </div>
+
+                  <button class="btn btn-outline-secondary" type="submit"> Submit
+                  </button>
+              
             </div>
-          </div>
+          </div> -->
 
             </div>
 
@@ -156,5 +220,6 @@
       
 
     <script src="main.js"></script>
+    
   </body>
 </html>
