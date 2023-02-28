@@ -227,6 +227,10 @@ body{
 	border: 3px solid #bb2929;
 }
 
+.side{
+	display: block;
+}
+
 /* Media queries */
 
 @media screen and (max-width: 800px) {
@@ -249,5 +253,7 @@ body{
      margin-left: 1rem;
 	 width: 98%;   
     }
+
+
 }
 

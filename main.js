@@ -21,7 +21,7 @@ const expresiones = {
 
 
 const openMenu = ()=>{
-    sidebar.classList.toggle('d-sm-block')
+    sidebar.classList.toggle('side')
 }
 hamburger.addEventListener('click', () =>{
     openMenu();
